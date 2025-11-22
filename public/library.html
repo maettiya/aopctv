@@ -60,15 +60,15 @@
   </nav>
 
   <!-- MAIN -->
-  <main class="pt-32 w-full px-6 max-w-6xl mx-auto">
+  <main class="pt-32 pb-24 w-full px-6 max-w-6xl mx-auto">
 
     <!-- TITLES -->
-    <h1 class="text-3xl sm:text-4xl font-light tracking-widest text-center mb-2">
-      AOPC MUSIC LIBRARY
+    <h1 class="text-2xl sm:text-3xl font-light tracking-wide text-center mb-2">
+      AOPC Music Library
     </h1>
 
-    <h2 class="text-lg sm:text-xl tracking-widest text-neutral-400 text-center mb-10">
-      Collection
+    <h2 class="text-xs sm:text-sm tracking-[0.2em] text-neutral-400 text-center mb-10 uppercase">
+      COLLECTION
     </h2>
 
     <!-- GRID -->
@@ -210,21 +210,38 @@
     </div>
 
 
-  <!-- FOOTER -->
-  <footer class="mt-16 w-full text-[10px] py-6 px-6 flex items-center justify-between text-neutral-500">
+    <!-- FOOTER -->
+    <footer class="footer-wrap w-full text-[10px] py-6 px-4 sm:px-6 flex items-center justify-between">
 
-    <div>© 2025 AOPCTV</div>
+      <div class="text-neutral-500">
+        © 2025 AOPCTV
+      </div>
 
-    <div class="flex-grow flex justify-center">
-      <img src="aopctv-logo.png" class="h-6 opacity-70 invert" />
-    </div>
+      <div class="flex-grow flex justify-center">
+        <img src="aopctv-logo.png" class="h-6 sm:h-8 opacity-80 invert" alt="AOPCTV logo">
+      </div>
 
-    <div class="flex gap-4">
-      <a href="https://www.instagram.com/aopctv/" class="hover:text-white transition">IG</a>
-      <a href="https://uk.linkedin.com/company/aopctv" class="hover:text-white transition">LI</a>
-    </div>
+      <div class="flex gap-3 sm:gap-4 text-neutral-500 justify-end">
+        <a href="https://www.instagram.com/aopctv/" target="_blank" class="hover:text-white">IG</a>
+        <a href="https://uk.linkedin.com/company/aopctv" target="_blank" class="hover:text-white">LI</a>
+      </div>
 
-  </footer>
+    </footer>
+
+    <style>
+      /* Mobile footer matches homepage */
+      @media (max-width: 480px) {
+        .footer-wrap {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+        .footer-wrap div,
+        .footer-wrap a {
+          justify-content: center;
+        }
+      }
+    </style>
 
   <script type="module" src="src/main.js"></script>
 
