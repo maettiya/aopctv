@@ -61,3 +61,16 @@ function playMedia(id) {
 }
 
 window.toggleProject = toggleProject;
+
+// CONTACT MODAL
+export function toggleContactModal() {
+  const modal = document.getElementById("contact-modal");
+
+  if (modal.classList.contains("opacity-0")) {
+    modal.classList.remove("opacity-0", "pointer-events-none");
+  } else {
+    modal.classList.add("opacity-0", "pointer-events-none");
+  }
+}
+
+window.toggleContactModal = toggleContactModal;

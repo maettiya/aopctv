@@ -48,11 +48,11 @@
 
   <!-- TOP RIGHT NAV -->
   <nav class="absolute top-6 right-4 sm:top-8 sm:right-8 flex items-center gap-4 sm:gap-6">
-    <a href="#" class="hover:opacity-70 transition">
+    <a href="library.html" class="hover:opacity-70 transition">
       <img src="/music.png" alt="Music Library" class="h-4 sm:h-5 w-4 sm:w-5">
     </a>
-    <a href="#" class="hover:opacity-70 transition">
-      <img src="/contact.png" alt="Contact" class="h-3.5 sm:h-4 w-3.5 sm:w-4">
+    <a onclick="toggleContactModal()" class="cursor-pointer hover:opacity-70 transition">
+      <img src="contact.png" alt="Contact" class="h-3.5 sm:h-4 w-3.5 sm:w-4">
     </a>
   </nav>
 
@@ -243,6 +243,46 @@
     </section>
   </main>
 
+  <!-- CONTACT MODAL -->
+    <div id="contact-modal"
+        class="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 z-50">
+
+      <div class="bg-white w-[90%] max-w-md p-8 rounded-lg shadow-xl border border-neutral-300 relative">
+
+        <!-- Close button -->
+        <button onclick="toggleContactModal()"
+                class="absolute top-3 right-3 text-neutral-500 hover:text-neutral-900 text-2xl leading-none">
+          &times;
+        </button>
+
+        <!-- Centered Logo -->
+        <div class="flex justify-center mb-6">
+          <img src="/aopctv-logo.png" class="h-6 opacity-90" alt="AOPCTV Logo">
+        </div>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/xgvqykgw" method="POST" class="flex flex-col gap-4">
+
+          <input type="text" name="first_name" placeholder="First Name"
+                class="border border-neutral-300 px-3 py-2 text-sm rounded focus:outline-none focus:border-black" required>
+
+          <input type="text" name="last_name" placeholder="Last Name"
+                class="border border-neutral-300 px-3 py-2 text-sm rounded focus:outline-none focus:border-black" required>
+
+          <input type="email" name="email" placeholder="Email"
+                class="border border-neutral-300 px-3 py-2 text-sm rounded focus:outline-none focus:border-black" required>
+
+          <textarea name="message" rows="4" placeholder="Your message..."
+                    class="border border-neutral-300 px-3 py-2 text-sm rounded focus:outline-none focus:border-black" required></textarea>
+
+          <button type="submit"
+                  class="bg-black text-white py-2 rounded text-sm tracking-widest hover:bg-neutral-800 transition">
+            SEND MESSAGE
+          </button>
+        </form>
+
+      </div>
+    </div>
 
   <!-- FOOTER -->
   <footer class="footer-wrap w-full text-[10px] py-6 px-4 sm:px-6 flex items-center justify-between">
@@ -264,6 +304,5 @@
 
 
   <script type="module" src="/src/main.js"></script>
-
 </body>
 </html>
