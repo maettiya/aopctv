@@ -2,7 +2,7 @@
   "name": "aopctv",
   "version": "0.0.0",
 
-  "homepage": "https://maettiya.github.io/aopctv",
+  "homepage": ".",
 
   "scripts": {
     "dev": "vite",
