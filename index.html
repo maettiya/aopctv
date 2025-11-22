@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AOPCTV</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts: IBM Plex Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      background-color: #F9FAFB;
+      color: #1B1B1B;
+      letter-spacing: 0.08em;
+    }
+
+    /* Mobile layout fixes */
+    @media (max-width: 480px) {
+      .work-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+      }
+      .footer-wrap {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      .footer-wrap div,
+      .footer-wrap a {
+        justify-content: center;
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/aopctv/assets/index-CPI9w3l4.js"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <!-- TOP LEFT LOGO -->
+  <header class="absolute top-6 left-4 sm:top-8 sm:left-8">
+    <img src="/aopctv/aopctv-logo.png" alt="AOPCTV" class="h-5 sm:h-6 opacity-90">
+  </header>
+
+  <!-- TOP RIGHT NAV -->
+  <nav class="absolute top-6 right-4 sm:top-8 sm:right-8 flex items-center gap-4 sm:gap-6">
+    <a href="#" class="hover:opacity-70 transition">
+      <img src="/aopctv/music.png" alt="Music Library" class="h-4 sm:h-5 w-4 sm:w-5">
+    </a>
+    <a href="#" class="hover:opacity-70 transition">
+      <img src="/aopctv/contact.png" alt="Contact" class="h-3.5 sm:h-4 w-3.5 sm:w-4">
+    </a>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="flex-grow w-full px-4 sm:px-6 pt-28 sm:pt-32 max-w-3xl mx-auto">
+    <section class="mt-12 sm:mt-16">
+      <div class="flex flex-col gap-4 text-xs items-center w-full">
+
+        <!-- UKMVA WIN -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">November 2025</span>
+            <a href="https://awards.ukmva.com/" target="_blank" class="hover:underline tracking-widest">
+              Archy Moor wins UKMVA for Best Hip Hop / Grime / Rap video newcomer with Robbery Rings.
+            </a>
+          </div>
+        </div>
+
+
+        <!-- UKMVA NOMINATION -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">September 2025</span>
+            <p class="tracking-widest">
+              Robbery Rings nominated for UKMVA for Best Hip Hop / Grime / Rap video newcomer.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- KICKERS -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">September 2025</span>
+            <a href="https://www.instagram.com/p/DOqSPRajcbJ/" target="_blank" class="hover:underline tracking-widest">
+              AOPCTV for Kickers UK. Earl Saga and Archy Moor create the sound design for the Goldie Collection.
+            </a>
+          </div>
+        </div>
+
+
+        <!-- CECIL WRIGHT — MONACO YACHT SHOW -->
+        <div class="w-full flex flex-col items-center">
+
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">
+              August 2025
+            </span>
+
+            <a href="https://cecilwright.com/monaco-yacht-show-2"
+              target="_blank"
+              class="hover:underline transition tracking-widest">
+              AOPCTV for Cecil Wright. Custom soundtrack and sound design for the Monaco Yacht Show.
+            </a>
+          </div>
+
+        </div>
+        <!-- END CECIL WRIGHT -->
+
+
+        <!-- JENEVIEVE — FADED LVE -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">July 2025</span>
+            <button onclick="toggleProject('project-faded')" class="hover:underline tracking-widest">
+              Earl Saga produces the record Faded Lve by Jenevieve.
+            </button>
+          </div>
+
+          <div id="project-faded" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out w-full max-w-3xl">
+            <div class="mt-4 sm:mt-6 rounded-lg shadow overflow-hidden aspect-video">
+              <iframe id="video-project-faded"
+                data-base="https://www.youtube.com/embed/OU5RAA7Tpzo"
+                src=""
+                class="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- JENEVIEVE — DAMAGE CONTROL -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">July 2025</span>
+            <button onclick="toggleProject('project-damage')" class="hover:underline tracking-widest">
+              Earl Saga produces the record Damage Control by Jenevieve.
+            </button>
+          </div>
+
+          <div id="project-damage" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out w-full max-w-3xl">
+            <div class="mt-4 sm:mt-6 rounded-lg shadow overflow-hidden aspect-video">
+              <iframe id="video-project-damage"
+                data-base="https://www.youtube.com/embed/Mv69Uh_HeZE"
+                src=""
+                class="w-full h-full"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ARCHY MOOR — ROBBERY RINGS -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">July 2025</span>
+            <button onclick="toggleProject('project-robbery')" class="hover:underline tracking-widest">
+              Archy Moor releases the Robbery Rings movie.
+            </button>
+          </div>
+
+          <div id="project-robbery" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out w-full max-w-3xl">
+            <div class="mt-4 sm:mt-6 rounded-lg shadow overflow-hidden aspect-video">
+              <iframe id="video-project-robbery"
+                data-base="https://www.youtube.com/embed/jF5F34ZY7vQ"
+                src=""
+                class="w-full h-full"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- BUDDY — NUNYA -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">July 2025</span>
+            <button onclick="toggleProject('project-nunya')" class="hover:underline tracking-widest">
+              Earl Saga produces the record NUNYA by Buddy.
+            </button>
+          </div>
+
+          <div id="project-nunya" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out w-full max-w-3xl">
+            <div class="mt-4 sm:mt-6 rounded-lg shadow overflow-hidden aspect-video">
+              <iframe id="video-project-nunya"
+                data-base="https://www.youtube.com/embed/tT-aPOKI5Ok"
+                src=""
+                class="w-full h-full"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- KAL BANX — 574 -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">July 2025</span>
+            <button onclick="toggleProject('project-574')" class="hover:underline tracking-widest">
+              Earl Saga produces the record 574 by Kal Banx.
+            </button>
+          </div>
+
+          <div id="project-574" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out w-full max-w-3xl">
+            <div class="mt-4 sm:mt-6 rounded-lg shadow overflow-hidden aspect-video">
+              <iframe id="video-project-574"
+                data-base="https://www.youtube.com/embed/uB7AEIl2OKE"
+                src=""
+                class="w-full h-full"
+                allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ARCHY MOOR — COSY EP -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">August 2023</span>
+            <a href="https://open.spotify.com/album/1eBnzQtHJrdVLb65p3k29J?si=xUoZ0hKIQh6daPyDm_bvFw"
+              target="_blank"
+              class="hover:underline tracking-widest">
+              Archy Moor releases the Cosy EP.
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Welcome -->
+        <div class="w-full flex flex-col items-center">
+          <div class="work-row flex items-center gap-4 sm:gap-10 whitespace-nowrap">
+            <span class="tracking-widest text-neutral-500 whitespace-nowrap">March 2022</span>
+            <p class="tracking-widest">Welcome to AOPCTV.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer-wrap w-full text-[10px] py-6 px-4 sm:px-6 flex items-center justify-between">
+
+    <div class="text-neutral-800">
+      © 2025 AOPCTV
+    </div>
+
+    <div class="flex-grow flex justify-center">
+      <img src="/aopctv/aopctv-logo.png" class="h-6 sm:h-8 opacity-80" alt="AOPCTV logo">
+    </div>
+
+    <div class="flex gap-3 sm:gap-4 text-neutral-700 justify-end">
+      <a href="https://www.instagram.com/aopctv/" target="_blank" class="hover:text-neutral-500">IG</a>
+      <a href="https://uk.linkedin.com/company/aopctv" target="_blank" class="hover:text-neutral-500">LI</a>
+    </div>
+
+  </footer>
+
+
+
+</body>
+</html>
